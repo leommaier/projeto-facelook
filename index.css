@@ -1,0 +1,252 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+* a:hover, button:hover {
+    cursor: pointer;
+}
+
+body {
+    background-color: #f0f2f5;
+}
+
+#container {
+    display: flex;    
+    flex-direction: column;    
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#main-container {
+    height: 100%;
+    max-width:1070px;     
+    margin-bottom: 140px;      
+    margin-top: 92px;
+    padding: 40px;    
+    display: flex;
+    flex-direction: row;
+    gap: 80px;    
+    align-items: center;
+    justify-content: center;    
+}
+
+#section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+    justify-content: center;    
+    margin-bottom: 90px;
+    width: 396px;  
+}
+
+
+#section1 h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    color: #1877f2;
+}
+
+#section1 #logo-text {
+    font-size: 28px;
+    text-align: left;
+}
+
+#section2 {    
+    width: 396px;
+    min-width: 370px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;   
+}
+
+#forms {
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.10);
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+#form-itens {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#form-itens input  {
+    height: 50px;
+    border: 1.5px solid rgba(0, 0, 0, 0.100);
+    border-radius: 8px;
+    padding: 15px;
+}
+
+#form-itens input:focus {
+    outline: none;
+    border: 1px solid #1877f2;
+    box-shadow: 0px 0px 2px #1876f270;
+    
+}
+
+#form-itens input::placeholder {
+    color: rgba(0, 0, 0, 0.404);
+    font-size: 18px;
+}
+
+#form-itens #button-login {
+    height: 50px;
+    width: 100%;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;  
+}
+
+#a-login {
+    width: 100%;
+}
+#form-itens #button-login a{    
+    color: white;
+    text-decoration: none;
+}
+
+#form-itens #button-login:hover {
+    background-color: #196cda;
+}
+
+#form-itens a {
+    text-align: center;
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#form-itens hr {
+    border-top: none;    
+}
+
+#form-itens #button-register {
+    height: 50px;
+    background-color: #3daf26;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold; 
+}
+
+#form-itens #button-register:hover {
+    background-color: #36a121;
+}
+
+#create-page {
+    font-size: 14px;
+    text-align: center;
+}
+
+#create-page a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+#footer {    
+    background-color: white;
+    color: rgba(0, 0, 0, 0.600);
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;    
+    gap: 10px;
+    padding: 40px;    
+    padding-bottom: 207px;
+}
+
+#footer ul {
+    list-style: none;
+}
+
+#footer ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.600);
+}
+
+#footer ul .list1 {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+#plus-box {
+    background-color: #f0f2f5;
+    border: 1.5px solid rgba(0, 0, 0, 0.200);
+    border-radius: 3px;
+    padding: 0px 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:600;    
+    font-size: 18px;
+    
+}
+
+#footer ul .list2 {
+    display: inline-block;
+    margin-right: 15px;    
+}
+
+#footer p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    margin-top: 15px;
+}
+
+@media (max-width: 1060px) {
+    #main-container {
+        justify-content: space-between;
+    }
+    
+    #section1 #logo-text {
+        font-size: 25px;
+        text-align: left;
+        width: 370px;
+    }
+}
+
+@media (max-width: 880px) {
+    #container {
+        justify-content: center;  
+        align-items: center;            
+    }
+    #main-container {        
+        flex-wrap: wrap;        
+        gap: 30px; 
+        width: 400px; 
+        margin: auto;
+        padding-top: 30px; 
+        padding-bottom: 40px;  
+               
+    }
+    #section1 {
+        justify-content: center;
+        align-items: center;        
+        margin-bottom: 0px;          
+        padding: 20px;      
+        padding-top: 0px;  
+        width: 370px;  
+    }
+    #section1 #logo-text{
+        text-align: center;
+    
+    }
+}
