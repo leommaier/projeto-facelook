@@ -229,7 +229,9 @@ body {
         align-items: center;            
     }
     #main-container {        
-        flex-wrap: wrap;        
+        flex-wrap: wrap;
+        align-items: center;   
+        justify-content: center;     
         gap: 30px; 
         
         margin: auto;
