@@ -224,27 +224,28 @@ body {
 }
 
 @media (max-width: 880px) {
-    #container {
+    #container {        
         justify-content: center;  
         align-items: center;            
     }
     #main-container {        
         flex-wrap: wrap;        
         gap: 30px; 
-        width: 400px; 
+        
         margin: auto;
         padding-top: 30px; 
         padding-bottom: 40px;  
                
     }
     #section1 {
+        display: flex;
         justify-content: center;
         align-items: center;        
         margin-bottom: 0px;          
         padding: 20px;      
-        padding-top: 0px;  
-        width: 370px;  
+        padding-top: 0px;          
     }
+
     #section1 #logo-text{
         text-align: center;
     
